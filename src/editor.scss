@@ -1,0 +1,157 @@
+/**
+ * Idara Reading Time — editor-only styles.
+ */
+
+/* ── Block selection affordance ──────────────────────────── */
+.wp-block-idara-reading-time.idara-rt {
+	outline:        1px dashed rgba( 79, 70, 229, .35 );
+	outline-offset: 4px;
+	border-radius:  2px;
+	padding:        2px 4px;
+	width:          100%;
+
+	&[data-idara-rt-hidden="true"] {
+		opacity: 0.55;
+		outline-color: rgba( 180, 83, 9, .5 );
+	}
+
+	.idara-rt-hidden-badge {
+		margin-left: 0.6em;
+		padding:     2px 7px;
+		border-radius: 3px;
+		background:  #fef3c7;
+		color:       #92400e;
+		font-size:   10px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+}
+
+/* ── Inspector — shared section label ────────────────────── */
+.idara-rt-section-label {
+	display:        block;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color:          #50575e;
+	margin-bottom:  8px;
+}
+
+/* ── Icon picker grid ────────────────────────────────────── */
+.idara-rt-icon-picker .idara-rt-icon-grid {
+	display:               grid;
+	grid-template-columns: repeat( 4, 1fr );
+	gap:                   6px;
+	margin-top:            4px;
+}
+
+.idara-rt-icon-btn {
+	display:         flex !important;
+	align-items:     center;
+	justify-content: center;
+	height:          40px !important;
+	width:           100%;
+	border:          1px solid #dcdcde !important;
+	border-radius:   6px !important;
+	background:      #fff !important;
+	color:           #50575e;
+	transition:      border-color .15s, background .15s, color .15s;
+
+	&:hover {
+		border-color: #4f46e5 !important;
+		color:        #4f46e5;
+	}
+
+	&.is-active {
+		border-color: #4f46e5 !important;
+		background:   #eef2ff !important;
+		color:        #4f46e5;
+		box-shadow:   0 0 0 1px #4f46e5 inset;
+	}
+}
+
+/* ── Format toggle (Single / Range, Top / Bottom) ───────── */
+.idara-rt-format-toggle {
+	display: flex;
+	width:   100%;
+
+	.components-button {
+		flex: 1;
+		justify-content: center;
+	}
+}
+
+/* ── Progress bar panel: hero callout ────────────────────── */
+.idara-rt-progress-panel .components-panel__body-title button {
+	font-weight: 600;
+}
+
+.idara-rt-hero-callout {
+	background:    linear-gradient( 135deg, #eef2ff 0%, #f5f3ff 100% );
+	border:        1px solid #c7d2fe;
+	border-radius: 8px;
+	padding:       12px 14px;
+	margin-bottom: 4px;
+
+	.idara-rt-hero-text {
+		color:       #3730a3 !important;
+		line-height: 1.5;
+		display:     block;
+	}
+}
+
+/* ── Progress bar preview mini-window ────────────────────── */
+.idara-rt-progress-preview {
+	margin: 8px 0;
+}
+
+.idara-rt-progress-preview-window {
+	position:       relative;
+	background:     #f6f7f7;
+	border:         1px solid #dcdcde;
+	border-radius:  6px;
+	height:         100px;
+	overflow:       hidden;
+}
+
+.idara-rt-progress-preview-dots {
+	display:    flex;
+	gap:        4px;
+	padding:    8px 10px;
+	background: #fff;
+	border-bottom: 1px solid #dcdcde;
+
+	span {
+		width:         8px;
+		height:        8px;
+		border-radius: 50%;
+		background:    #dcdcde;
+	}
+}
+
+.idara-rt-progress-preview-bar {
+	position:      absolute;
+	left:          0;
+	width:         70%;
+	transition:    background .15s, height .15s;
+	pointer-events: none;
+}
+
+.idara-rt-progress-preview-content {
+	padding: 12px 10px 0;
+
+	div {
+		height:        4px;
+		background:    #dcdcde;
+		border-radius: 2px;
+		margin-bottom: 6px;
+	}
+}
+
+.idara-rt-preview-caption {
+	display:    block;
+	margin-top: 6px;
+	color:      #757575 !important;
+	text-align: center;
+	font-size:  11px !important;
+}

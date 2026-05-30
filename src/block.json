@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "idara/reading-time",
+	"version": "1.0.0",
+	"title": "Reading Time",
+	"category": "text",
+	"icon": "clock",
+	"description": "Smart reading time block with optional range display and scroll progress bar.",
+	"keywords": [ "reading time", "read time", "minutes", "progress bar" ],
+	"textdomain": "idara-reading-time",
+	"editorScript": "file:./index.js",
+	"editorStyle":  "file:./index.css",
+	"style":        "file:./style-index.css",
+	"viewScript":   "file:./view.js",
+	"render":       "file:./render.php",
+	"attributes": {
+		"wordsPerMinute":      { "type": "number",  "default": 200 },
+		"prefix":              { "type": "string",  "default": "" },
+		"suffix":              { "type": "string",  "default": "min read" },
+		"rangeSuffix":         { "type": "string",  "default": "min read" },
+		"displayAsRange":      { "type": "boolean", "default": false },
+		"rangeSpread":         { "type": "number",  "default": 1 },
+		"hideShortPosts":      { "type": "boolean", "default": false },
+		"hideThreshold":       { "type": "number",  "default": 1 },
+		"iconStyle":           { "type": "string",  "default": "clock" },
+		"showProgressBar":     { "type": "boolean", "default": false },
+		"progressBarColor":    { "type": "string",  "default": "#4f46e5" },
+		"progressBarHeight":   { "type": "number",  "default": 3 },
+		"progressBarPosition": { "type": "string",  "default": "top" }
+	},
+	"supports": {
+		"html": false,
+		"color": {
+			"text": true,
+			"background": false,
+			"__experimentalDefaultControls": { "text": true }
+		},
+		"typography": {
+			"fontSize": true,
+			"fontWeight": true,
+			"__experimentalDefaultControls": { "fontSize": true }
+		},
+		"spacing": {
+			"margin":  [ "top", "bottom" ],
+			"padding": false
+		},
+		"align": [ "left", "center", "right" ]
+	},
+	"example": {
+		"attributes": {
+			"prefix": "Reading time:",
+			"displayAsRange": true,
+			"iconStyle": "clock"
+		}
+	}
+}

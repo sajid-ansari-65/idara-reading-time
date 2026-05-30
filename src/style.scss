@@ -1,0 +1,56 @@
+/**
+ * Idara Reading Time — frontend styles.
+ * Progress bar uses CSS variables set inline by render.php.
+ */
+
+.idara-rt {
+	display:      flex;
+	align-items:  center;
+	gap:          0.4em;
+	line-height:  1.4;
+	width:        100%;
+
+	&.has-text-align-center { justify-content: center; }
+	&.has-text-align-right  { justify-content: flex-end; }
+	&:not(.has-text-align-center):not(.has-text-align-right) { justify-content: flex-start; }
+
+	.idara-rt-icon {
+		display:     inline-flex;
+		align-items: center;
+		opacity:     0.7;
+		flex-shrink: 0;
+
+		svg { width: 1em; height: 1em; }
+	}
+
+	.idara-rt-text {
+		font-size: inherit;
+		color:     inherit;
+	}
+}
+
+/* ── Progress bar ─────────────────────────────────────── */
+.idara-rt-progress-wrap {
+	position:       fixed;
+	left:           0;
+	right:          0;
+	width:          100vw;
+	margin:         0;
+	padding:        0;
+	z-index:        999999;
+	pointer-events: none;
+	background:     transparent;
+	box-sizing:     border-box;
+
+	&.idara-rt-progress-top    { top:    0; }
+	&.idara-rt-progress-bottom { bottom: 0; }
+
+	.idara-rt-progress-bar {
+		display:          block;
+		width:            0%;
+		height:           var( --idara-rt-bar-h, 3px );
+		background-color: var( --idara-rt-bar-c, #4f46e5 );
+		transition:       width .1s linear;
+		will-change:      width;
+	}
+}

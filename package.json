@@ -1,0 +1,17 @@
+{
+	"name": "idara-reading-time",
+	"version": "1.0.0",
+	"description": "A lightweight Gutenberg block that shows estimated reading time.",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"build":      "wp-scripts build",
+		"start":      "wp-scripts start",
+		"lint:js":    "wp-scripts lint-js",
+		"lint:css":   "wp-scripts lint-style",
+		"format":     "wp-scripts format",
+		"plugin-zip": "wp-scripts plugin-zip"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.0.0"
+	}
+}
