@@ -79,13 +79,14 @@ In the block settings sidebar, click the "Range" button under Format. You can th
 
 == Screenshots ==
 
-1. Block in the editor with the visual icon picker
-2. Display format panel — Single vs Range toggle
-3. Calculation panel — WPM and hide-on-short-posts controls
-4. Scroll progress bar panel with live preview
-5. Frontend display — reading time with clock icon
-6. Frontend display — scroll progress bar at the top of the page
-7. Block inside a Full Site Editing Single Post template
+1. Block in the WordPress block inserter — find it by searching "Reading Time"
+2. Block selected in the editor with toolbar shortcuts for icon cycling and range toggle
+3. Block settings sidebar — Display, Calculation, Scroll progress bar, and Advanced panels
+4. Display panel — icon style picker (clock, timer, hourglass, or none), Single/Range format toggle, and custom prefix/suffix fields
+5. Calculation panel — adjustable words-per-minute (default 200 WPM) and hide-on-short-posts toggle
+6. Scroll progress bar panel — enable toggle, live mini-preview, position (top/bottom), height, and color picker
+7. Frontend — reading time with clock icon displayed in a post, with scroll progress bar visible at the bottom of the page
+8. Frontend — reading time with hourglass icon displayed below the post title in a blog layout
 
 == Development ==
 

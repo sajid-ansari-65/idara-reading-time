@@ -26,9 +26,21 @@ A lightweight Gutenberg block that shows estimated reading time with an optional
 
 ## Screenshots
 
-| Editor | Settings | Frontend |
+**Editor / Backend**
+
+| Block inserter | Block in editor | Settings sidebar |
 |---|---|---|
-| ![Block in editor](screenshot-1.png) | ![Settings panel](screenshot-4.png) | ![Frontend](screenshot-5.png) |
+| ![Block in inserter](screenshot-1.png) | ![Block in editor](screenshot-2.png) | ![Settings sidebar](screenshot-3.png) |
+
+| Display panel | Calculation panel | Progress bar panel |
+|---|---|---|
+| ![Display panel](screenshot-4.png) | ![Calculation panel](screenshot-5.png) | ![Progress bar panel](screenshot-6.png) |
+
+**Frontend**
+
+| Reading time with progress bar | Reading time below post title |
+|---|---|
+| ![Frontend with progress bar](screenshot-7.png) | ![Frontend in blog layout](screenshot-8.png) |
 
 ---
 
@@ -88,7 +100,7 @@ npm install
 | `src/view.js` | `build/view.js` | Frontend scroll bar (vanilla JS, < 1 KB) |
 | `src/style.scss` | `build/style-index.css` | Frontend + editor shared styles |
 | `src/editor.scss` | `build/index.css` | Editor-only styles |
-| `src/render.php` | `build/render.php` | Server-side dynamic render |
+| `src/render.php` | `build/render.php` | Server-side dynamic render (manually synced — webpack does not copy PHP) |
 | `src/block.json` | `build/block.json` | Block metadata |
 
 The `build/` directory is committed so the plugin installs without an npm step. The `src/` directory contains the full human-readable source.
@@ -102,6 +114,7 @@ The `build/` directory is committed so the plugin installs without an npm step. 
 - **`viewScript`** in `block.json` — WordPress auto-enqueues `view.js` only on pages that contain the block. No global enqueue.
 - **Progress bar + `position: fixed`** — the wrap element is moved to `<body>` at runtime via `document.body.appendChild()` to escape any CSS `transform` or `will-change` ancestors (common in page-builder themes).
 - **Color sanitization** — uses a CSS-safe character regex whitelist instead of `sanitize_hex_color()` to support `rgb()`, `hsl()`, and named colors.
+- **Icon alignment** — SVG icons use `display: block` and `overflow: visible` to prevent inline-baseline gaps and stroke clipping at viewBox edges. `align-items: center` is explicitly declared on all alignment variants to override WordPress block style injections.
 
 ---
 
