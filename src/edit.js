@@ -274,7 +274,7 @@ export default function Edit( { attributes, setAttributes } ) {
 
 				{ /* === PROGRESS BAR === */ }
 				<PanelBody
-					title={ __( '✨ Scroll progress bar', 'idara-reading-time' ) }
+					title={ __( 'Scroll progress bar', 'idara-reading-time' ) }
 					initialOpen={ false }
 					className="idara-rt-progress-panel"
 				>

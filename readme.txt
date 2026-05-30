@@ -87,6 +87,13 @@ In the block settings sidebar, click the "Range" button under Format. You can th
 6. Frontend display — scroll progress bar at the top of the page
 7. Block inside a Full Site Editing Single Post template
 
+== Development ==
+
+Source code and build tools are available on GitHub:
+https://github.com/sajid-ansari-65/idara-reading-time
+
+The `src/` directory contains the unminified JavaScript (ES modules, JSX) and SCSS. Run `npm install && npm run build` to compile.
+
 == Changelog ==
 
 = 1.0.0 =
