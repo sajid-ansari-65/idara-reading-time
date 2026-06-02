@@ -8,7 +8,7 @@ Requires PHP:      7.4
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-A lightweight Gutenberg block that shows estimated reading time, with an optional scroll progress bar. FSE-ready. No bloat.
+Show estimated reading time with an optional scroll progress bar. A lightweight, FSE-ready Gutenberg block that loads only where used.
 
 == Description ==
 
@@ -60,6 +60,10 @@ The plugin strips block markup, shortcodes, and HTML from the post content, coun
 = Does it work with Full Site Editing block themes? =
 
 Yes. You can place the block inside any block template or template part — for example, inside a "Single Post" template just below the Post Title block.
+
+= Will this slow down my site? =
+
+No. The entire plugin is under 25 KB, ships no jQuery, and makes zero external requests. Its CSS and JavaScript are enqueued **only on pages that actually contain the block** — never site-wide — so pages without it load exactly as before.
 
 = Does the scroll progress bar affect performance? =
 

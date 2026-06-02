@@ -1,6 +1,12 @@
 # Idara Reading Time
 
-A lightweight Gutenberg block that shows estimated reading time with an optional scroll progress bar. FSE-ready, no bloat, loads only where used.
+Show estimated reading time with an optional scroll progress bar. A lightweight, FSE-ready Gutenberg block that loads only where used — no bloat, no tracking.
+
+[![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/idara-reading-time?style=flat-square&color=b45309)](https://wordpress.org/plugins/idara-reading-time/)
+[![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/idara-reading-time?style=flat-square&color=b45309)](https://wordpress.org/plugins/idara-reading-time/advanced/)
+[![WordPress Plugin Rating](https://img.shields.io/wordpress/plugin/stars/idara-reading-time?style=flat-square&color=b45309)](https://wordpress.org/plugins/idara-reading-time/#reviews)
+[![WordPress Plugin Tested WP Version](https://img.shields.io/wordpress/plugin/tested/idara-reading-time?style=flat-square&color=b45309)](https://wordpress.org/plugins/idara-reading-time/)
+[![License: GPL v2](https://img.shields.io/badge/license-GPL--2.0-blue?style=flat-square)](https://www.gnu.org/licenses/gpl-2.0.html)
 
 **WordPress.org:** [wordpress.org/plugins/idara-reading-time](https://wordpress.org/plugins/idara-reading-time/)  
 **Version:** 1.0.0 · **Requires WP:** 6.4+ · **Requires PHP:** 7.4+ · **License:** GPL-2.0-or-later
