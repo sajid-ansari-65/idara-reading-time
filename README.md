@@ -36,17 +36,17 @@ Show estimated reading time with an optional scroll progress bar. A lightweight,
 
 | Block inserter | Block in editor | Settings sidebar |
 |---|---|---|
-| ![Block in inserter](screenshot-1.png) | ![Block in editor](screenshot-2.png) | ![Settings sidebar](screenshot-3.png) |
+| ![Block in inserter](assets/screenshot-1.png) | ![Block in editor](assets/screenshot-2.png) | ![Settings sidebar](assets/screenshot-3.png) |
 
 | Display panel | Calculation panel | Progress bar panel |
 |---|---|---|
-| ![Display panel](screenshot-4.png) | ![Calculation panel](screenshot-5.png) | ![Progress bar panel](screenshot-6.png) |
+| ![Display panel](assets/screenshot-4.png) | ![Calculation panel](assets/screenshot-5.png) | ![Progress bar panel](assets/screenshot-6.png) |
 
 **Frontend**
 
 | Reading time with progress bar | Reading time below post title |
 |---|---|
-| ![Frontend with progress bar](screenshot-7.png) | ![Frontend in blog layout](screenshot-8.png) |
+| ![Frontend with progress bar](assets/screenshot-7.png) | ![Frontend in blog layout](assets/screenshot-8.png) |
 
 ---
 
