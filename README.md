@@ -1,3 +1,4 @@
+
 # Idara Reading Time
 
 Show estimated reading time with an optional scroll progress bar. A lightweight, FSE-ready Gutenberg block that loads only where used — no bloat, no tracking.

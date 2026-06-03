@@ -1,0 +1,10 @@
+# Place WP.org listing assets here:
+#   banner-772x250.png
+#   banner-1544x500.png
+#   icon-128x128.png
+#   icon-256x256.png
+#   screenshot-1.png
+#   screenshot-2.png
+#   screenshot-3.png
+#
+# These get pushed to SVN /assets/ by the deploy Action.
