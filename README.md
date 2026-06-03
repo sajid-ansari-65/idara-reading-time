@@ -1,3 +1,6 @@
+> ⚠️ **Please fork this repo** rather than cloning directly.
+> For installation, download from [WordPress.org](https://wordpress.org/plugins/idara-reading-time/) only.
+
 
 # Idara Reading Time
 
