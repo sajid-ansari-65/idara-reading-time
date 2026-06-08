@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Idara Reading Time
- * Plugin URI:        https://github.com/sajid-ansari-65/idara-reading-time
+ * Plugin URI:        https://idara-studio.vercel.app/plugins/reading-time
  * Description:       A lightweight Gutenberg block that shows estimated reading time with optional scroll progress bar. FSE-ready, no bloat, loads only where used.
  * Version:           1.0.0
  * Requires at least: 6.4
