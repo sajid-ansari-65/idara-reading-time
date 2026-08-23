@@ -13,7 +13,7 @@ Show estimated reading time with an optional scroll progress bar. A lightweight,
 [![License: GPL v2](https://img.shields.io/badge/license-GPL--2.0-blue?style=flat-square)](https://www.gnu.org/licenses/gpl-2.0.html)
 
 **WordPress.org:** [wordpress.org/plugins/idara-reading-time](https://wordpress.org/plugins/idara-reading-time/)  
-**Version:** 1.0.0 · **Requires WP:** 6.4+ · **Requires PHP:** 7.4+ · **License:** GPL-2.0-or-later
+**Version:** 1.0.1 · **Requires WP:** 6.4+ · **Requires PHP:** 7.4+ · **License:** GPL-2.0-or-later
 
 ---
 
