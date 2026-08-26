@@ -16,6 +16,8 @@ Show estimated reading time with an optional scroll progress bar. A lightweight,
 
 *Idara (إدارة) is an Arabic word meaning "studio" or "administration" — the brand behind a growing family of carefully crafted, single-purpose Gutenberg blocks.*
 
+Browse the full catalogue, live demos and per-block documentation at [idara.studio](https://idara.studio/plugins/reading-time).
+
 = Why this and not a full block suite? =
 
 Most block plugins ship 30+ blocks you'll never use, slowing your editor and your frontend. Idara plugins are deliberately small. This one is under 25 KB. CSS and JS load **only on pages where the block is present** — never globally.
