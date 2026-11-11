@@ -11,7 +11,6 @@ import {
 	ToggleControl,
 	ColorPicker,
 	Button,
-	ButtonGroup,
 	Tooltip,
 	ToolbarGroup,
 	ToolbarButton,
@@ -24,25 +23,25 @@ import { useSelect } from '@wordpress/data';
 /* ── Icon SVGs ──────────────────────────────────────────────────────────── */
 const ICONS = {
 	clock: (
-		<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+		<svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={ { fill: 'none' } } stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
 			<circle cx="12" cy="12" r="10" />
 			<polyline points="12 6 12 12 16 14" />
 		</svg>
 	),
 	timer: (
-		<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+		<svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={ { fill: 'none' } } stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
 			<line x1="10" y1="2" x2="14" y2="2" />
 			<line x1="12" y1="14" x2="15" y2="11" />
 			<circle cx="12" cy="14" r="8" />
 		</svg>
 	),
 	hourglass: (
-		<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+		<svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={ { fill: 'none' } } stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
 			<path d="M5 22h14M5 2h14M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
 		</svg>
 	),
 	none: (
-		<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+		<svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={ { fill: 'none' } } stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
 			<line x1="5" y1="12" x2="19" y2="12" />
 		</svg>
 	),
@@ -165,7 +164,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					/>
 					<ToolbarButton
 						icon={
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" style={ { fill: 'none' } } stroke="currentColor" strokeWidth="2">
 								<line x1="6" y1="12" x2="18" y2="12" />
 								{ displayAsRange && <line x1="6" y1="16" x2="14" y2="16" /> }
 							</svg>
@@ -192,7 +191,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					<Text size={ 11 } weight={ 600 } upperCase className="idara-rt-section-label">
 						{ __( 'Format', 'idara-reading-time' ) }
 					</Text>
-					<ButtonGroup className="idara-rt-format-toggle">
+					<div className="idara-rt-format-toggle" role="group" aria-label={ __( 'Format', 'idara-reading-time' ) }>
 						<Button
 							variant={ ! displayAsRange ? 'primary' : 'secondary' }
 							onClick={ () => setAttributes( { displayAsRange: false } ) }
@@ -205,7 +204,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						>
 							{ __( 'Range', 'idara-reading-time' ) }
 						</Button>
-					</ButtonGroup>
+					</div>
 
 					{ displayAsRange && (
 						<>
@@ -305,7 +304,7 @@ export default function Edit( { attributes, setAttributes } ) {
 							<Text size={ 11 } weight={ 600 } upperCase className="idara-rt-section-label">
 								{ __( 'Position', 'idara-reading-time' ) }
 							</Text>
-							<ButtonGroup className="idara-rt-format-toggle">
+							<div className="idara-rt-format-toggle" role="group" aria-label={ __( 'Position', 'idara-reading-time' ) }>
 								<Button
 									variant={ progressBarPosition === 'top' ? 'primary' : 'secondary' }
 									onClick={ () => setAttributes( { progressBarPosition: 'top' } ) }
@@ -318,7 +317,7 @@ export default function Edit( { attributes, setAttributes } ) {
 								>
 									{ __( 'Bottom', 'idara-reading-time' ) }
 								</Button>
-							</ButtonGroup>
+							</div>
 
 							<Spacer marginTop={ 4 } />
 

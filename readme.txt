@@ -3,7 +3,7 @@ Contributors:      sajidansari65
 Tags:              reading time, gutenberg block, progress bar, blog, fse
 Requires at least: 6.4
 Tested up to:      7.1
-Stable tag:        1.0.1
+Stable tag:        1.0.2
 Requires PHP:      7.4
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -102,6 +102,11 @@ https://github.com/sajid-ansari-65/idara-reading-time
 The `src/` directory contains the unminified JavaScript (ES modules, JSX) and SCSS. Run `npm install && npm run build` to compile.
 
 == Changelog ==
+
+= 1.0.2 =
+* Tested with WordPress 7.1.4.
+* Editor: the Format and Position toggles no longer use the ButtonGroup component, which is deprecated in WordPress 6.8 and later. They look and behave the same.
+* Editor: the clock and timer icons in the icon picker and toolbar now show as outlines, not filled circles.
 
 = 1.0.1 =
 * Tested up to WordPress 7.1.
